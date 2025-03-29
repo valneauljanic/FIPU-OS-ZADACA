@@ -1,0 +1,52 @@
+Zadatak 1
+
+1. pwd
+
+2. ls
+
+3. mkdir vjezba1
+cd vjezba1
+
+4. touch README.md
+
+5. cd ..
+
+
+Zadatak 2
+
+1. mkdir vjezba2 && touch vjezba2/file.txt
+
+2. cp file.txt file_copy.txt
+
+3. ls
+
+4. rm file.txt && cd ..
+
+5. ne možemo jer direktorij nije prazan
+
+Zadatak 3
+
+1. mkdir -p vjezba3/backup
+
+2. touch vjezba3/notes.txt vjezba3/todo.txt vjezba3/script.sh
+
+3. cp vjezba3/*.txt vjezba3/script.sh vjezba3/backup/
+
+4. rm vjezba3/script.sh && ls
+
+5. mkdir vjezba3/backup/$USER
+
+6. mv vjezba3/backup/* vjezba3/backup/$USER/
+
+
+Zadatak 4
+
+1. mkdir -p vjezba4/subfolder
+
+2. touch vjezba4/$HOSTNAME
+
+3. mv vjezba4/$HOSTNAME vjezba4/$USER
+
+4. mv vjezba4/$USER vjezba4/subfolder/
+
+5. rm $(pwd)/vjezba4/subfolder/$USER
