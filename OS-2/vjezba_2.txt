@@ -1,0 +1,54 @@
+Zadatatak 1
+
+mkdir vjezba_2.txt
+touch vjezba_2.txt
+
+mkdir -p vjezba_2/data
+mkdir -p vjezba_2/backup
+
+touch vjezba_2/data/script.js vjezba_2/data/style.css vjezba_2/data/.env
+
+echo 'console.log("Hello, World!")' > vjezba_2/data/script.js
+echo 'body { background-color: #f0f0f0; }' > vjezba_2/data/style.css
+echo 'VJEZBE=OS' > vjezba_2/data/.env
+
+
+Zadatatak 2.
+
+cp -rva vjezba_2/data/. vjezba_2/backup/
+cd vjezba_2/data && ls -laS ../backup
+
+  Odgovor:  total 0
+            drwxrwxrwx 1 valne valne 512 Mar 29 14:56 .
+            drwxrwxrwx 1 valne valne 512 Mar 29 14:47 ..
+            -rwxrwxrwx 1 valne valne  36 Mar 29 14:59 style.css
+            -rwxrwxrwx 1 valne valne  29 Mar 29 14:57 script.js
+            -rwxrwxrwx 1 valne valne  10 Mar 29 15:00 .env
+
+
+Zadatak 3.
+
+cd data
+rm -v script.js style.css
+cd ..
+cd ..
+cp -nv vjezba_2/backup/* vjezba_2/data/
+
+cd vjezba_2/data
+ls -lat
+
+
+Zadatak 4.
+
+cd ..
+
+mkdir -p zadatak-4 && cd zadatak-4
+touch file1.txt .txt
+mkdir dir1 dir2
+touch dir1/.js
+mkdir dir2/dir3
+touch dir2/dir3/file3.txt
+
+ls -laS
+ls -lSh
+ls -laRt --color
